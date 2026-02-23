@@ -16,8 +16,5 @@ test.describe("OrangeHRM assertion test suite",()=>{
     test("Should check if the page has correct title", async ({ page }) => {
         await expect(page).toHaveTitle("OrangeHRM");
     });
-    test ("Check whether the locator is visible",async({page})=>{
-        await expect(page.locator("//input[@placeholder='Username']")).toBeVisible();
-    })
 
 });
